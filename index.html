@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>محلنا</title>
+<title>نجوم</title>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
 
 body {
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Cairo', sans-serif;
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     display: flex;
@@ -22,14 +22,22 @@ body {
 .container {
     text-align: center;
     width: 90%;
-    max-width: 400px;
+    max-width: 420px;
 }
 
+/* الشعار */
+.logo {
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+/* العنوان */
 h1 {
-    margin-bottom: 30px;
-    font-size: 28px;
+    margin-bottom: 25px;
+    font-size: 26px;
 }
 
+/* الأزرار */
 .btn {
     display: flex;
     align-items: center;
@@ -39,7 +47,7 @@ h1 {
     color: white;
     font-size: 20px;
     padding: 18px;
-    margin: 15px 0;
+    margin: 14px 0;
     border-radius: 14px;
     transition: 0.3s;
     font-weight: bold;
@@ -49,16 +57,40 @@ h1 {
     transform: scale(1.05);
 }
 
-.whatsapp {
-    background: #25D366;
+.whatsapp { background: #25D366; }
+.call { background: #007AFF; }
+.maps { background: #EA4335; }
+
+/* الأقسام */
+.section {
+    margin-top: 35px;
+    text-align: right;
+    background: rgba(255,255,255,0.08);
+    padding: 18px;
+    border-radius: 14px;
 }
 
-.call {
-    background: #007AFF;
+.section h2 {
+    margin-bottom: 12px;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 6px;
 }
 
-.maps {
-    background: #EA4335;
+.section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section li {
+    padding: 6px 0;
+    font-size: 16px;
+}
+
+/* مسافة أخيرة */
+.footer-space {
+    height: 30px;
 }
 </style>
 </head>
@@ -66,9 +98,13 @@ h1 {
 <body>
 
 <div class="container">
-    <h2>✨ مرحبًا بكم في موقع نجوم ✨</h2>
-    <h2>✨ لقطع غيار المضخات ✨</h2>
 
+    <!-- الشعار -->
+    <img src="logo.jpeg"شعار المحل" class="logo">
+
+    <h1>✨ مرحبًا بكم في محلنا ✨</h1>
+
+    <!-- الأزرار -->
     <a class="btn whatsapp" href="https://wa.me/966551829311" target="_blank">
         💬 واتساب
     </a>
@@ -80,6 +116,30 @@ h1 {
     <a class="btn maps" href="#" target="_blank">
         📍 موقعنا على جوجل ماب
     </a>
+
+    <!-- قسم القطع -->
+    <div class="section">
+        <h2>🔩 القطع</h2>
+        <ul>
+            <li>▪ قطع غيار مضخات خرسانة</li>
+            <li>▪ قطع غيار خلاطات خرسانة</li>
+            <li>▪ قطع غيار أوناش نقل بلك</li>
+        </ul>
+    </div>
+
+    <!-- قسم الخدمات -->
+    <div class="section">
+        <h2>🛠️ الخدمات</h2>
+        <ul>
+            <li>▪ إصلاح بلوف</li>
+            <li>▪ إصلاح بساتم</li>
+            <li>▪ إصلاح عفريتات</li>
+            <li>▪ كبس قماش كفرات (صيني – قلاب – وغيرها)</li>
+        </ul>
+    </div>
+
+    <div class="footer-space"></div>
+
 </div>
 
 </body>
